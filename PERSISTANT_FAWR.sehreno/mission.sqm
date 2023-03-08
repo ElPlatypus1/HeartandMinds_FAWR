@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=249;
+		nextID=255;
 	};
 	class Camera
 	{
-		pos[]={18033.902,174.40382,18591.211};
-		dir[]={-0.24039055,-0.53868103,-0.80756724};
-		up[]={-0.15370059,0.84247458,-0.51634306};
-		aside[]={-0.95849305,-1.2942473e-007,0.28531921};
+		pos[]={18506.113,12.455515,14670.507};
+		dir[]={0.89070159,-0.36606708,0.26984704};
+		up[]={0.35043213,0.93055111,0.10616662};
+		aside[]={0.2899664,-4.1857129e-007,-0.95711672};
 	};
 };
 binarizationWanted=0;
@@ -59476,8 +59476,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={18517.855,9.285078,14671.091};
-				angles[]={0.02199479,1.4423314,6.2811723};
+				position[]={18518.34,8.1900673,14671.773};
+				angles[]={0.023993526,1.4423314,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -59486,7 +59486,6 @@ class Mission
 			};
 			id=1924;
 			type="DeconShower_02_F";
-			atlOffset=0.023170471;
 			class CustomAttributes
 			{
 				class Attribute0
