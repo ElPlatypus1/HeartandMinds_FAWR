@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=225;
+		nextID=237;
 	};
 	class Camera
 	{
-		pos[]={17800.586,35.364708,18297.158};
-		dir[]={0.72566253,-0.4893252,-0.48393342};
-		up[]={0.40715262,0.87206805,-0.27152023};
-		aside[]={-0.55487937,6.2363688e-007,-0.83205539};
+		pos[]={17841.414,35.437206,18280.664};
+		dir[]={-0.31074828,-0.6048643,0.73334533};
+		up[]={-0.23601,0.79628766,0.55696166};
+		aside[]={0.92083877,-5.972106e-008,0.39020026};
 	};
 };
 binarizationWanted=0;
@@ -58256,7 +58256,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={17826.398,7.5983887,18316};
-			angle=2.4211395;
+			angle=2.421138;
 			class Attributes
 			{
 				condition="this && vehicle player in thisList";
@@ -58267,7 +58267,6 @@ class Mission
 				repeatable=1;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 				effectSound="ace_detector_1";
 			};
 			id=1827;
@@ -58287,7 +58286,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={18459.521,4.2703319,14686.462};
-			angle=3.0640519;
+			angle=3.0640478;
 			class Attributes
 			{
 				condition="this && vehicle player in thisList";
@@ -58298,7 +58297,6 @@ class Mission
 				repeatable=1;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 				effectSound="ace_detector_1";
 			};
 			id=1830;
