@@ -405,7 +405,7 @@ btc_animals_type = ["Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_R
 //FOB
 btc_fob_mat = "Land_Cargo20_blue_F";
 btc_fob_structure = "Land_Cargo_HQ_V1_F";
-btc_fob_flag = "Flag_NATO_F";
+btc_fob_flag = "OFrP_Flag_France";
 btc_fob_id = 0;
 btc_fob_minDistance = 1500;
 
@@ -658,6 +658,15 @@ switch (_p_en) do {
         btc_type_motorized = btc_type_motorized + ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
         btc_type_motorized_armed = btc_type_motorized_armed + ["I_Heli_light_03_F"];
     };
+    case "CUP_O_SLA" : {
+        btc_type_units = btc_type_units - ["CUP_O_sla_Soldier_AA_desert", "CUP_O_sla_Pilot", "CUP_O_sla_Crew", "CUP_O_sla_Soldier_AAT_desert", "CUP_O_sla_Soldier_AMG_desert", "CUP_O_sla_Soldier_HAT_desert", "CUP_O_sla_Soldier_SL_desert", "CUP_O_sla_Commander_desert", "CUP_O_sla_soldier_desert", "CUP_O_sla_Soldier_AR_desert", "CUP_O_sla_Soldier_GL_desert", "CUP_O_sla_Soldier_MG_desert", "CUP_O_sla_Medic_desert", "CUP_O_sla_Officer_desert", "CUP_O_SLA_Spotter_desert", "CUP_O_SLA_Soldier_Backpack_desert", "CUP_O_sla_Soldier_LAT_desert", "CUP_O_sla_Soldier_AT_desert", "CUP_O_sla_Engineer_desert", "CUP_O_sla_Sniper_desert", "CUP_O_sla_Sniper_KSVK_desert", "CUP_O_SLA_Sniper_SVD_Night_desert", "CUP_O_sla_Soldier_AKS_Night_desert", "CUP_O_sla_Soldier_AKS_74_GOSHAWK_desert", "CUP_O_sla_Soldier_AKS_74_GOSHAWK", "CUP_O_sla_Soldier_AKS_Night", "CUP_O_SLA_Sniper_SVD_Night", "CUP_O_sla_Soldier_AA_urban", "CUP_O_sla_Soldier_AAT_urban", "CUP_O_sla_Soldier_AMG_urban", "CUP_O_sla_Soldier_HAT_urban", "CUP_O_sla_Soldier_SL_urban", "CUP_O_sla_Commander_urban", "CUP_O_sla_Soldier_urban", "CUP_O_sla_Soldier_AR_urban", "CUP_O_sla_Soldier_GL_urban", "CUP_O_sla_Soldier_MG_urban", "CUP_O_sla_Medic_urban", "CUP_O_sla_Officer_urban", "CUP_O_SLA_Spotter_urban", "CUP_O_SLA_Soldier_Backpack_urban", "CUP_O_sla_Soldier_LAT_urban", "CUP_O_sla_Soldier_AT_urban", "CUP_O_sla_Engineer_urban", "CUP_O_sla_Sniper_urban", "CUP_O_sla_Sniper_KSVK_urban", "CUP_O_SLA_Sniper_SVD_Night_urban", "CUP_O_sla_Soldier_AKS_Night_urban", "CUP_O_sla_Soldier_AKS_74_GOSHAWK_urban"];
+        btc_type_boats = btc_type_boats - ["CUP_O_ZUBR_SLA"];
+        btc_type_divers = btc_type_divers + ["CUP_O_INS_Woodlander3"];
+        btc_type_crewmen = "CUP_O_Partisans_soldier_SL", "CUP_O_Partisans_soldier_TTsKO";
+        btc_type_motorized = btc_type_motorized + ["CUP_O_TT650_TKA", "CUP_O_AN2_TK"];
+        btc_type_motorized_armed = btc_type_motorized_armed + ["CUP_O_Ka60_Grey_RU", "CUP_O_T90_RU","CUP_O_BTR40_MG_TKM", "CUP_O_L39_TK"];
+        btc_type_gl = btc_type_gl - ["CUP_O_AGS_SLA"];
+    };
     case "IND_C_F" : {
         btc_type_motorized = btc_type_motorized + ["I_G_Offroad_01_repair_F", "I_G_Offroad_01_F", "I_G_Quadbike_01_F", "I_G_Van_01_fuel_F", "I_Truck_02_transport_F", "I_Truck_02_covered_F"];
         btc_type_motorized_armed = btc_type_motorized_armed + ["I_Heli_light_03_F", "I_G_Offroad_01_F"];
@@ -674,27 +683,27 @@ btc_spect_updateOn = -1;
 
 //Rep
 btc_rep_bonus_cache = 100;
-btc_rep_bonus_civ_hh = 3;
-btc_rep_bonus_disarm = 15;
+btc_rep_bonus_civ_hh = 5;
+btc_rep_bonus_disarm = 25;
 btc_rep_bonus_hideout = 200;
 btc_rep_bonus_mil_killed = 0.25;
-btc_rep_bonus_IEDCleanUp = 10;
+btc_rep_bonus_IEDCleanUp = 15;
 btc_rep_bonus_removeTag = 3;
 btc_rep_bonus_removeTagLetter = 0.5;
 btc_rep_bonus_foodGive = 0.5;
 
-btc_rep_malus_civ_hd = - 2;
+btc_rep_malus_civ_hd = - 1;
 btc_rep_malus_animal_hd = - 1;
 btc_rep_malus_civ_killed = - 10;
-btc_rep_malus_animal_killed = - 5;
-btc_rep_malus_civ_suppressed = - 4;
-btc_rep_malus_player_respawn = - 10;
-btc_rep_malus_veh_killed = - 25;
+btc_rep_malus_animal_killed = - 2;
+btc_rep_malus_civ_suppressed = - 2;
+btc_rep_malus_player_respawn = - 0;
+btc_rep_malus_veh_killed = - 15;
 btc_rep_malus_building_damaged = - 2.5;
 btc_rep_malus_building_destroyed = - 5;
 btc_rep_malus_foodRemove = - btc_rep_bonus_foodGive;
-btc_rep_malus_breakDoor = - 2;
-btc_rep_malus_wheelChange = - 7;
+btc_rep_malus_breakDoor = - 0;
+btc_rep_malus_wheelChange = - 0;
 
 btc_rep_level_veryLow = 0;
 btc_rep_level_low = 200;
@@ -705,7 +714,7 @@ btc_rep_level_high = 750;
 btc_units_owners = [];
 
 //Door
-btc_door_breaking_time = 60;
+btc_door_breaking_time = 10;
 
 //Flag
 btc_flag_textures = [
