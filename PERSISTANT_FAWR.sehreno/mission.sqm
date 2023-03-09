@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2162;
+		nextID=2173;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=321;
+		nextID=339;
 	};
 	class Camera
 	{
-		pos[]={18545.256,29.252031,14677.233};
-		dir[]={-0.84439868,-0.43024781,0.31927675};
-		up[]={-0.40244666,0.90270507,0.15216988};
-		aside[]={0.35368577,8.4779458e-008,0.9353931};
+		pos[]={18436.326,54.217621,14637.655};
+		dir[]={0.68221456,-0.54787463,0.4844166};
+		up[]={0.44675532,0.83647591,0.31722045};
+		aside[]={0.57901263,-3.3958349e-007,-0.8154366};
 	};
 };
 binarizationWanted=0;
@@ -113,13 +113,15 @@ addons[]=
 	"A3_Structures_F_Mil_BagFence",
 	"CUP_WheeledVehicles_NewM1097",
 	"CUP_WaterVehicles_LCU1600",
-	"CUP_WaterVehicles_RHIB"
+	"CUP_WaterVehicles_RHIB",
+	"CUP_Pila_DBE1",
+	"A3_Structures_F_EPA_Civ_Constructions"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=68;
+		items=70;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -530,6 +532,18 @@ class AddonsMetaData
 		{
 			className="CUP_WaterVehicles_RHIB";
 			name="CUP_WaterVehicles_RHIB";
+		};
+		class Item68
+		{
+			className="CUP_Pila_DBE1";
+			name="CUP_Pila_DBE1";
+		};
+		class Item69
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -43566,7 +43580,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=243;
+		items=248;
 		class Item0
 		{
 			dataType="Marker";
@@ -64310,7 +64324,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={18056.922,11.314656,18294.256};
-				angles[]={-0,6.0696578,0};
+				angles[]={0,6.0696578,0};
 			};
 			side="Empty";
 			flags=4;
@@ -64681,6 +64695,87 @@ class Mission
 			id=2160;
 			type="CUP_B_RHIB2Turret_HIL";
 			atlOffset=4.2669497;
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18499.137,13.161699,14706.848};
+				angles[]={0.072867498,1.5016813,6.282208};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2168;
+			type="Land_Vez_svetla";
+			atlOffset=-2.3841858e-007;
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18497.322,6.0623384,14644.83};
+				angles[]={0,6.1394577,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2169;
+			type="Land_PortableLight_double_F";
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18478.305,6.1194978,14640.616};
+				angles[]={0,6.1394577,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2170;
+			type="Land_PortableLight_double_F";
+		};
+		class Item246
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18447.484,6.2058334,14638.47};
+				angles[]={0,0.77393478,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2171;
+			type="Land_PortableLight_double_F";
+		};
+		class Item247
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18582.398,5.5697465,14654.542};
+				angles[]={0,5.4230971,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2172;
+			type="Land_PortableLight_double_F";
 		};
 	};
 	class Connections
